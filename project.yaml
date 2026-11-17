@@ -2,24 +2,24 @@
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
 # TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "xregistry"
 name: "xRegistry"
 description: "The xRegistry project defines an abstract model for managing metadata about resources and provides a REST-based interface to discover, create, modify and delete those resources."
 type: "project"
-project_lead: "duglin" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
-  - name: "#cloudevents"
+project_lead: "duglin"
+slack_channels:
+  - name: "#xregistry"
     primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2025-06-05T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/357" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/357"
 
 repositories:
+  - "https://github.com/xregistry/spec"
   - "https://github.com/xregistry/server"
 
 website: "https://xregistry.io"
@@ -31,18 +31,20 @@ artwork: "https://github.com/cncf/artwork/tree/main/projects/xregistry"
 #   path: "https://github.com/xregistry/spec/blob/main/ADOPTERS.md"
 
 
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "xregistry/spec"
+package_managers:
+  docker:
+    - "ghcr.io/xregistry/xr"
+    - "ghcr.io/xregistry/xrserver"
+    - "ghcr.io/xregistry/xrserver-all"
 
 social:
-  twitter: "https://twitter.com/xregistryio"
+  twitter: "https://x.com/xregistryio"
 
 security:
   policy:
-    path: "https://github.com/xregistry/spec/blob/main/SECURITY.md"
+    path: "https://github.com/xregistry/spec#security-concerns"
   contact:
-    advisory_url: "https://github.com/xregistry/spec/security/advisories/new"
+    advisory_url: "https://github.com/xregistry/spec/issues"
 
 governance:
   contributing:
@@ -54,8 +56,8 @@ legal:
   license:
     path: "https://github.com/xregistry/spec/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
