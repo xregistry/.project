@@ -24,7 +24,7 @@ repositories:
 
 website: "https://xregistry.io"
 
-artwork: "https://landscape.cncf.io/logos/xregistry.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/xregistry"
 
 # TODO: Add ADOPTERS.md if your project tracks adopters
 # adopters:
